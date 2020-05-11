@@ -30,7 +30,39 @@
                 // your code goes here
                 // be sure to assign the roman numeral to the variable romanNumeral
                 // it will be used to display it on the web page using the code below
+                let inputNumber = prompt("Enter a number between 1 and 10 here:")
+                if (inputNumber < 1)
+                {
+                    alert("You did not enter a valid number.")
+                    inputNumber = prompt("Enter a number between 1 and 10 here:")
+                }
 
+                if (inputNumber > 10)
+                {
+                    alert("You did not enter a valid number.")
+                    inputNumber = prompt("Enter a number between 1 and 10 here:")
+                }
+
+                if (inputNumber < 2)
+                    romanNumeral = "I"
+                else if (inputNumber < 3)
+                        romanNumeral = "II"
+                    else if (inputNumber < 4)
+                            romanNumeral = "III"
+                        else if (inputNumber < 5)
+                                romanNumeral = "IV"
+                            else if (inputNumber < 6)
+                                    romanNumeral = "V"
+                                else if (inputNumber < 7)
+                                        romanNumeral = "VI"
+                                    else if (inputNumber < 8)
+                                            romanNumeral = "VII"
+                                        else if (inputNumber < 9)
+                                                romanNumeral = "VIII"
+                                            else if (inputNumber < 10)
+                                                    romanNumeral = "IX"
+                                                else if (inputNumber == 10)
+                                                        romanNumeral = "X"
 
 
                 // do not modify start
@@ -38,7 +70,9 @@
                 outputDiv.innerHTML = romanNumeral
                 // do not modify end
             }
+            startThings()
         </script>
+        
     </body>
 
 </html>
